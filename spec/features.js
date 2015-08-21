@@ -43,9 +43,7 @@ describe('Thermostat Features',function(){
      $("input#city").val("London");
      $(".getWeather").click();
      expect($.getJSON).toHaveBeenCalled();
-     expect($(".weather").html()).not.toEqual("");
-     // expect(".weather_temp").toBeTruthy();
-     // expect(".weather_image").toBeTruthy();
+     expect($(".weather").html()).toEqual("light intensity drizzle");
    });
 
   });
